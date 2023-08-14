@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Registration Form</title>
+</head>
+<style>
+    .container {
+        width: 50%;
+        border: 4px solid rgb(129, 50, 137);
+        padding-left: 4px;
+        border-radius: 10px;
+        padding-bottom: 5px;
+        margin-top: 7%;
+        margin-left: 340px;
+        background-color: rgb(184, 123, 241);
+        box-shadow: 0 0 200px rgb(220, 124, 190);
+    }
+    h1 {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1>Registration Form</h1>
+        <br>
+        <form>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div><br>
+
+            <div>
+            <lable for="phone">Contact Number:</lable>
+            <input type="text" name="phone" id="phone" pattern="\d{10}" placeholder="Enter your Number" required>
+            </div><br>
+
+            <div>
+                <label for="GENDER">Gender:</label>
+                <input type="radio"  name="male" >Male
+                <input type="radio"  name="female" >Feale
+            </div><br>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="password" name="password" placeholder="Enter your e-mail" required>
+            </div><br>
+
+            <div>
+                <lable for="passwprd">password:</lable>
+                <input type="password" name="password" id="pass" pattern="\d{5}-\d{8}" placeholder="Enter your password" required>
+            </div><br>
+            
+           
+
+            <div>
+                <lable for="city">City:</lable>
+                <select name="text" id="city">
+                    <option value="">City</option>
+                    <option value="">Ahmedabad</option>
+                    <option value="">Amreli</option>
+                    <option value="">Baroda</option>
+                    <option value="">Bhuj</option>
+                    <option value="">Rajkot</option>
+                    <option value="">Surat</option>
+                </select>
+            </div><br>
+
+            <div>
+                <lable for="pincode">Pincode:</lable>
+                <input type="text" name="pincode" id="pin" pattern="\d{6}" placeholder="Enter your pincode" required>
+            </div><br>
+
+            <div>
+                <label for="address" style="vertical-align: top;">Address:</label>
+                <textarea name="address" id="address" cols="30" rows="3"></textarea>
+            </div><br>
+
+
+            <button type="reset" action="get" >Reset</button>
+            <button type="submit" action="get" >submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
